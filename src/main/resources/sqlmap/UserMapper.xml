@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cheguo.springboot.dao.UserDao">
+
+	<select id="listUser" resultType="com.cheguo.springboot.vo.User">
+		select id id,
+		       nickname nickname,
+		       telephone telephone,
+		       email email
+		from t_user
+	</select>
+
+</mapper>
