@@ -7,13 +7,13 @@
 			    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
 
-	<!-- mybatis sqlsessionfactory -->
+	<!-- 定义 sessionFactory -->
 	<bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
         <property name="mapperLocations" value="classpath:sqlmap/*Mapper.xml"/>  
 	</bean>
 
-	<!-- mybatis mapper scan -->
+	<!-- 定义mybatis mapper scan -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="com.cheguo.springboot.dao" />
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactoryBean"></property>

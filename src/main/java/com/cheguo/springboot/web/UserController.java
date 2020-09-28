@@ -13,11 +13,11 @@ import com.cheguo.springboot.vo.User;
 @RequestMapping("/user")
 public class UserController {
 
-	@Autowired
-	private UserService service;
+    @Autowired
+    private UserService service;
 
-	@RequestMapping("/userList")
-	public List<User> userList() {
-		return service.listUser();
-	}
+    @RequestMapping("/userList")
+    public List<User> userList() {
+	return service.listUser();
+    }
 }

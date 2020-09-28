@@ -5,13 +5,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
 
-@Configuration  
+@Configuration
 @SpringBootApplication
-@ImportResource(value = {"classpath:spring.xml"})  
+@ImportResource(value = { "classpath:spring.xml" })
 public class StartApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(StartApplication.class, args);
 	}
-	
+
 }
